@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* base styles */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand";
+  color: #333;
+}
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+.navbar h1 {
+  color: #f1356d;
+}
+
+.navbar .links {
+    margin-left: auto;
+}
+
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+.navbar a:hover {
+  color: #f1356d;
+}
+.content {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* blog preview */
+.blog-preview{
+  padding: 12px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #f2f2f2;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.blog-preview:hover{
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+}
+
+.blog-preview h2{
+  font-size: 24px;
+  color: #f1356d;
+  margin-bottom: 8px;
+}
+
+.donutSpinner {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  display: inline-block;
+  border: 4px solid #f1356d12;
+  border-left-color: #f1356d;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: donut-spin 1.2s linear infinite;
+}
+
+@keyframes donut-spin {
+  to {
+      transform: rotate(1turn);
+  }
+}
